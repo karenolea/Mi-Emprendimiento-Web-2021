@@ -1,0 +1,11 @@
+//This file you will create your style for buttons inside of the project
+.footer__enviar{
+    background-color: $tangerine;
+
+    &:hover{
+        background-color:$white;
+    }
+    &:focus{
+        background-color:$white;   
+    }
+}

@@ -1,0 +1,87 @@
+//This file is for create your style with relation on space of footer
+.footer {
+  padding: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: space-between;
+  color: $white;
+  background-color: $black;
+  font-family: $font-family-primary;
+  font-size: $large;
+  text-align: center;
+
+  &__list {
+   margin-top: 0.5rem;
+  }
+  &__item {
+    font-size: $large;
+    margin:0.5rem;
+    list-style: none;
+    text-align: center;
+    a {
+      text-decoration: none;
+      color: $white;
+    }
+  }
+  &__button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__input {
+    font-size: $large;
+    border-radius: 8px;
+    margin: 0.5rem;
+    padding: 0.5rem;
+   
+    &:focus {
+      background-color: $orange;
+    }
+  }
+  &__enviar {
+    padding: 0.5rem;
+    border-radius: 8px;
+    font-size: $medium;
+    font-family: $font-family-primary;
+  }
+}
+
+@media (min-width: 575.98px) {
+
+  .footer {
+    padding: 1.5rem;
+    font-size: $small;
+    display: flex;
+
+    &__list {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-around;
+      align-items: center;
+      align-content: space-between;
+      font-size: $small;
+      margin: 0;
+    }
+    &__item {
+      font-size: $x-small;
+      margin: 0 20px;
+    }
+
+    &__button {
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+    }
+    &__input {
+      font-size: $x-small;
+      border-radius: 5px;
+      margin: 0.5rem;
+      
+    }
+    &__enviar {
+      border-radius: 5px;
+    }
+  }
+}

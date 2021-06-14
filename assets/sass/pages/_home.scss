@@ -1,0 +1,218 @@
+.main {
+  display: grid;
+  margin-bottom: 2rem;
+
+  .cards {
+    border: solid 1px;
+    padding: 1rem;
+    margin: 1rem 0.2rem 1rem 0.2rem;
+
+  .card {
+      padding: 1rem;
+      width: 100%;
+      height: auto;
+      border: dotted 1px;
+      margin-bottom: 0.5rem;
+    &__title {
+      font-size: $x-large;
+      font-family: $font-family-primary;
+    }
+    &__text {
+      font-family: $font-family-secundary;
+      font-weight: $font-regular;
+      font-size: $medium;
+      padding-top: 1rem;
+      line-height: 30px;
+      text-align: justify;
+    }
+    &__tutor {
+      font-family: $font-family-secundary;
+      font-weight: $font-bold;
+      font-size: $large;
+      padding-top: 1rem;
+    }
+    &__iconos {
+     padding-top: 1rem;
+     letter-spacing: 1pt;
+     font-size: $large;
+    }
+  }
+}
+  .about {
+    border: solid 1px;
+    padding: 1rem;
+    margin: 1rem 0.2rem 1rem 0.2rem;
+
+    &__courses {
+      width: 100%;
+      height: auto;
+      font-family: $font-family-secundary;
+      font-weight: $font-regular;
+      text-align: justify;
+      font-size: $medium;
+      padding: 1rem;
+    }
+
+    &__logo {
+      padding: 1rem;
+      text-align: center;
+    }
+    &__subtitle {
+      text-align: center;
+      font-size: x-large;
+    }
+    &__iconos {
+      text-align: center;
+      padding: 1rem;
+      font-weight: $font-bold;
+      font-size: $large;
+    }
+    &__text{
+      font-size: $medium;
+      padding: 0.2rem;
+      line-height: 35px;
+      margin-bottom: 1rem;
+    }
+    &__title {
+      background-color: $sable;
+      color: $white;
+      text-align: center;
+      font-family: $font-family-primary;
+      font-size: $x-large;
+      font-weight: $font-bold;
+    }
+    &__list {
+      margin: 1.5rem;
+      list-style-type: circle;
+    }
+    &__item {
+      font-family: $font-family-primary;
+      color: rgb(138, 22, 138);
+      font-size: $medium;
+    }
+    &__svg {
+      width: 80%;
+      height: auto;
+      display: flex;
+      margin: 0 auto;
+    }
+  }
+}
+
+.img_html {
+  width: 100%;
+  height: auto;
+  // position: relative;
+}
+.img_sass {
+  width: 100%;
+  height: auto;
+  // position: relative;
+}
+.img_web {
+  width: 80%;
+  height: auto;
+  border-radius: 50%;
+  border: solid 2px;
+}
+
+// comportamiento para pantallas sobre mobile
+@media (min-width: 576px) {
+  .main {
+    
+    .cards {
+      margin: 1rem ;
+  
+    .card {
+       
+      &__title {
+        font-size: $large;
+        font-family: $font-family-primary;
+      }
+      &__text {
+        font-family: $font-family-secundary;
+        font-weight: $font-regular;
+        font-size: $small;
+        padding-top: 1rem;
+      }
+      &__tutor {
+        font-family: $font-family-secundary;
+        font-weight: $font-bold;
+        font-size: $small;
+        padding-top: 1rem;
+      }
+      &__iconos {
+       padding-top: 1rem;
+       letter-spacing: 1pt;
+       font-size: $small;
+      }
+    }
+  }
+    .about {
+      border: solid 1px;
+      padding: 1rem;
+      margin: 1rem 0.2rem 1rem 0.2rem;
+  
+      &__courses {
+        width: 100%;
+        height: auto;
+        font-family: $font-family-secundary;
+        font-weight: $font-regular;
+        text-align: justify;
+        line-height: 18px;
+      }
+  
+      &__logo {
+        padding: 1rem;
+        text-align: center;
+      }
+      &__subtitle {
+        text-align: center;
+        font-size: $medium;
+        
+      }
+      &__iconos {
+        text-align: center;
+        padding: 1rem;
+        font-weight: $font-bold;
+        font-size: $medium;
+      }
+      &__text{
+        font-size: $small;
+        padding: 0.2rem;
+      }
+      &__title {
+        background-color: $sable;
+        color: $white;
+        margin: 1rem 0 1rem 0;
+        text-align: center;
+        font-family: $font-family-primary;
+        font-size: $large;
+        font-weight: $font-bold;
+        padding: 0.2rem;
+      }
+      &__list {
+        margin: 1.5rem;
+        list-style-type: circle;
+      }
+      &__item {
+        font-family: $font-family-primary;
+        color: rgb(138, 22, 138);
+        font-size: $small;
+      }
+      &__svg {
+        width: 30%;
+        height: auto;
+        display: flex;
+        margin: 0 auto;
+      }
+    }
+  }
+  
+  .img_web {
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+    border: solid 2px;
+  }
+}
